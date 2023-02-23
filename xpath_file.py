@@ -19,14 +19,19 @@ computer_role = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx
 
 save_button = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-wizard-view/div/mx-wizard/div/ng-form/div/div[3]/div[2]/mx-button[2]/button'
 
+change_status = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[1]/mx-horizontal-action-list/div/div[1]/button[3]'
+pick_status = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[2]/div/mx-side-panel-tab-body/div/div/mx-wizard-view/div/mx-wizard/div/ng-form/div/div[1]/div/div/div/div/div/div/div[2]/mx-enum-picker[1]/mx-select/md-input-container/select'
+change_status_button = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[2]/div/mx-side-panel-tab-body/div/div/mx-wizard-view/div/mx-wizard/div/ng-form/div/div[3]/div[2]/mx-button[2]/button'
+
 edit_button = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[1]/mx-horizontal-action-list/div/div[1]/button[1]'
 
 do_not_inherit_check_box = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[1]/div/div/div/div/div[4]/mx-checkbox/md-input-container/md-checkbox/div[2]/span'
 
 inventory_name = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[2]/div[1]/div/div/div/div[2]/mx-text-box[1]/md-input-container/input'
 
-imei1 = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[2]/div[1]/div/div/div/div[1]/mx-text-box[2]/md-input-container'
-imei2 = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[2]/div[1]/div/div/div/div[2]/mx-text-box[4]/md-input-container'
+# imei1 = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[2]/div[1]/div/div/div/div[1]/mx-text-box[2]/md-input-container'
+imei1 = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[2]/div[1]/div/div/div/div[1]/mx-text-box[2]/md-input-container/input'
+imei2 = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[2]/div[1]/div/div/div/div[2]/mx-text-box[4]/md-input-container/input'
 
 end_of_life_button = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[5]/div/div/div/mx-tabs/md-tabs/md-tabs-wrapper/md-tabs-canvas/md-pagination-wrapper/md-tab-item[8]'
 end_of_life_input = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[2]/mx-common-dialog-content/ng-form/mx-dialog-container/div[1]/div/div/mx-content-widget-view/mx-content-widget-view-dialog-page/div/div/div/div[5]/div/div/div/mx-tabs/md-tabs/md-tabs-content-wrapper/md-tab-content[8]/div/div/div/div/div[2]/div/div/mx-date-time-picker/div/md-input-container/md-datepicker/div[1]/input'
@@ -38,6 +43,6 @@ pick_proprietary = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]
 
 done_button = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-body/div/div/mx-dialog-view/div/div[3]/button[3]'
 
-more_button = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-header/div/div[2]/mx-side-panel-ui-actions/md-menu-bar/md-menu/button/md-icon'
+more_button = '/html/body/div[1]/mx-app/div/mx-shell/div/div/div/div/div[2]/mx-side-panel/div/div[1]/div/mx-side-panel-tab-header/div/div[2]/mx-side-panel-ui-actions/md-menu-bar/md-menu/button'
 
 new_window_button = '/html/body/div[5]/md-menu-content/md-menu-item[1]/button'

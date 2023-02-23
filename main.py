@@ -1,7 +1,3 @@
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
@@ -12,7 +8,7 @@ import definition_file as definition
 import xpath_file as xpath
 
 
-def main(mobil_name, sn_number, imei1_number, imei2_number, end_of_life_date_parameter, iteration):
+def main(mobil_name, sn_number_parameter, imei1_number, imei2_number, end_of_life_date_parameter, iteration):
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     driver.maximize_window()
 
@@ -43,8 +39,7 @@ def main(mobil_name, sn_number, imei1_number, imei2_number, end_of_life_date_par
                         'send_keys',
                         '     Write mobile SN............................OK',
                         'Please help me and write mobile SN, then press Enter. 🤗',
-                        sn_number)
-
+                        sn_number_parameter)
 
     # write asset manager
     definition.function_with_wait(
@@ -97,6 +92,36 @@ def main(mobil_name, sn_number, imei1_number, imei2_number, end_of_life_date_par
                         '     Click on save button.......................OK',
                         'Please help me and click on save button, then press Enter. 🤗')
 
+    # click on change status
+    definition.function(driver,
+                        'xpath',
+                        xpath.change_status,
+                        'click',
+                        '     Click on change status button..............OK',
+                        'Please help me and click on change status button, then press Enter. 🤗')
+
+    time.sleep(1)
+
+    # select proprietary
+    definition.function(driver,
+                        'select',
+                        xpath.pick_status,
+                        'select_by_index',
+                        '     Pick status................................OK',
+                        'Please help me and pick status, then press Enter. 🤗',
+                        '',
+                        3)
+
+    # click on change status button
+    definition.function(driver,
+                        'xpath',
+                        xpath.change_status_button,
+                        'click',
+                        '     Click on change status button..............OK',
+                        'Please help me and click on change status button, then press Enter. 🤗')
+
+    time.sleep(2)
+
     # click on edit button
     definition.function(driver,
                         'xpath',
@@ -128,7 +153,7 @@ def main(mobil_name, sn_number, imei1_number, imei2_number, end_of_life_date_par
                         'send_keys',
                         '     Write imei1 number.........................OK',
                         'Please help me and write imei1 number, then press Enter. 🤗',
-                        imei1)
+                        imei1_number)
 # write imei2
     definition.function(driver,
                         'xpath',
@@ -136,7 +161,7 @@ def main(mobil_name, sn_number, imei1_number, imei2_number, end_of_life_date_par
                         'send_keys',
                         '     Write imei2 number.........................OK',
                         'Please help me and write imei2 number, then press Enter. 🤗',
-                        mobil_name)
+                        imei2_number)
 
     # click on do not inherit check box
     definition.function(driver,
@@ -173,6 +198,7 @@ def main(mobil_name, sn_number, imei1_number, imei2_number, end_of_life_date_par
                         'Please help me and write MEK level 1 role, then press Enter. 🤗',
                         'MEG_MEK_ServiceDesk_Level_1')
 
+    time.sleep(1)
     # click on order
     definition.function(driver,
                         'xpath',
@@ -199,7 +225,7 @@ def main(mobil_name, sn_number, imei1_number, imei2_number, end_of_life_date_par
                         '     Click on done button.......................OK',
                         'Please help me and click on done button, then press Enter. 🤗')
 
-    time.sleep(1)
+    time.sleep(2)
 
     # click on more
     definition.function(driver,

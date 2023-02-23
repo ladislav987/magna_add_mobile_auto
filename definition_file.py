@@ -44,6 +44,7 @@ def function(driver, find_by, find_by_value, operation_to_do, success_message, f
             print(failed_message)
             keyboard.wait("Enter")
     else:
+        counter = 0
         print(success_message)
 
 
@@ -83,6 +84,7 @@ def function_with_wait(driver, find_by, find_by_value, second_element, operation
             print(failed_message)
             keyboard.wait("Enter")
     else:
+        counter = 0
         print(success_message)
 
 
